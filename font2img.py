@@ -29,12 +29,13 @@ DEFAULT_CHARSET = "./charset/cjk.json"
 
 
 def load_global_charset():
-    global CN_CHARSET, JP_CHARSET, KR_CHARSET, CN_T_CHARSET, GB775_CHARSET, GB6763_CHARSET
+    global CN_CHARSET, JP_CHARSET, KR_CHARSET, CN_T_CHARSET, GB639_CHARSET, GB775_CHARSET, GB6763_CHARSET
     cjk = json.load(open(DEFAULT_CHARSET))
     CN_CHARSET = cjk["gbk"]
     JP_CHARSET = cjk["jp"]
     KR_CHARSET = cjk["kr"]
     CN_T_CHARSET = cjk["gb2312_t"]
+    GB639_CHARSET = cjk["gb639"]
     GB775_CHARSET = cjk["gb775"]
     GB6763_CHARSET = cjk["gb6763"]
 
@@ -116,7 +117,7 @@ parser.add_argument('--label', dest='label', type=int, default=0, help='label as
 args = parser.parse_args()
 
 if __name__ == "__main__":
-    if args.charset in ['CN', 'JP', 'KR', 'CN_T', 'GB775', 'GB6763']:
+    if args.charset in ['CN', 'JP', 'KR', 'CN_T', 'GB639', 'GB775', 'GB6763']:
         charset = locals().get("%s_CHARSET" % args.charset)
     else:
         charset = [c for c in open(args.charset).readline()[:-1].decode("utf-8")]

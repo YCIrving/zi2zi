@@ -70,57 +70,86 @@ python package.py --dir=experiment5/FontImage32 --save_dir=experiment5/data32 --
 python package.py --dir=experiment5/FontImage33 --save_dir=experiment5/data33 --split_ratio=0.1;
 
 2.Train
-
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data33;
-mv data32 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data32;
-mv data31 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data31;
-mv data30 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data30;
-mv data29 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data29;
-mv data28 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data28;
-mv data27 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data27;
-mv data26 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data26;
-mv data25 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data25;
-mv data24 data;
-cd ..;
-CUDA_VISIBLE_DEVICES=2 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0;
-cd experiment5;
-mv data data24;
-mv data23 data;
-cd ..;
+cd experiment5 &&
+mv data data17 &&
+mv data18 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data18 &&
+mv data19 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data19 &&
+mv data20 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data20 &&
+mv data21 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data21 &&
+mv data22 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data22 &&
+mv data23 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data23 &&
+mv data24 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data24 &&
+mv data25 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data25 &&
+mv data26 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data26 &&
+mv data27 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data27 &&
+mv data28 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data28 &&
+mv data29 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data29 &&
+mv data30 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data30 &&
+mv data31 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data31 &&
+mv data32 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0 &&
+cd experiment5 &&
+mv data data32 &&
+mv data33 data &&
+cd .. &&
+CUDA_VISIBLE_DEVICES=0 python train.py --experiment_dir=experiment5 --experiment_id=5 --batch_size=16 --lr=0.001 --epoch=40 --sample_steps=50 --schedule=20 --L1_penalty=100 --Lconst_penalty=15 --resume=1 --resume_pre_model=0
 
 3.Infer
 
