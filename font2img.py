@@ -104,7 +104,7 @@ parser.add_argument('--src_font', dest='src_font', required=True, help='path of 
 parser.add_argument('--dst_font', dest='dst_font', required=True, help='path of the target font')
 parser.add_argument('--filter', dest='filter', type=int, default=0, help='filter recurring characters')
 parser.add_argument('--charset', dest='charset', type=str, default='CN',
-                    help='charset, can be either: CN, JP, KR , GB775, GB6763 or a one line file')
+                    help='charset, can be either: CN, JP, KR , GB639, GB775, GB6763 or a one line file')
 parser.add_argument('--shuffle', dest='shuffle', type=int, default=0, help='shuffle a charset before processings')
 parser.add_argument('--char_size', dest='char_size', type=int, default=150, help='character size')
 parser.add_argument('--canvas_size', dest='canvas_size', type=int, default=256, help='canvas size')
